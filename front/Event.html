@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divs with Click Handlers</title>
+<style>
+    .mydiv {
+        width: 25px;
+        height: 25px;
+        background-color: yellow;
+        margin: 1px;
+    }
+</style>
+</head>
+<body>
+<div id="outer">
+    <div id="div1" class="mydiv"></div>
+    <div id="div2" class="mydiv"></div>
+    <!-- Add 10 more divs -->
+    <div id="div3" class="mydiv"></div>
+    <div id="div4" class="mydiv"></div>
+    <div id="div5" class="mydiv"></div>
+    <div id="div6" class="mydiv"></div>
+    <div id="div7" class="mydiv"></div>
+    <div id="div8" class="mydiv"></div>
+    <div id="div9" class="mydiv"></div>
+    <div id="div10" class="mydiv"></div>
+    <div id="div11" class="mydiv"></div>
+    <div id="div12" class="mydiv"></div>
+</div>
+<p id="output"></p>
+
+<script>
+    // Get the outer div by id
+    const outerDiv = document.getElementById('outer');
+    // Get the output paragraph by id
+    const outputPara = document.getElementById('output');
+
+    // Add click event listener to the outer div
+    outerDiv.addEventListener('click', function(event) {
+        // Write the id of the clicked element to the output paragraph
+        outputPara.innerText = "Hi from " + event.target.id;
+    });
+</script>
+</body>
+</html>
