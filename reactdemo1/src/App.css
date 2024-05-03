@@ -40,3 +40,30 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+/* Styles for the book table */
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Styles for table headers */
+.book-table th {
+  background-color: #bb0f0f;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Styles for table rows */
+.book-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+}
+
+/* Hover effect on table rows */
+.book-table tr:hover {
+  background-color: #f9f9f9;
+}
